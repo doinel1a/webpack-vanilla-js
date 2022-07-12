@@ -1,0 +1,10 @@
+#GENERAL
+.env
+
+#BUILD FILES
+public/js
+public/css
+public/index.html
+
+#NODE MODULES
+node_modules
