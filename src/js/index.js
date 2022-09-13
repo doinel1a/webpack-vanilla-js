@@ -1,11 +1,11 @@
-import '../css/style.css';
-
 import wait from './async';
 
+import '../css/style.css';
+
 document.addEventListener('DOMContentLoaded', async () => {
-    const a = 'HELLO WORLD!';
+	const a = 'HELLO WORLD!';
 
-    await wait();
+	await wait();
 
-    console.log(a);
+	console.log(a);
 });

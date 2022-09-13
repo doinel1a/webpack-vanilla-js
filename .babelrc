@@ -1,19 +1,19 @@
 {
-    "presets": [
-        [
-            "@babel/preset-env",
-            {
-                "debug": true,
-                "useBuiltIns": "usage",
-                /*
+	"presets": [
+		[
+			"@babel/preset-env",
+			{
+				"debug": true,
+				"useBuiltIns": "usage",
+				/*
                     IN THE ENTRY JS FILE
                     import 'core-js/stable';
                     import 'regenerator-runtime/runtime';
 
                     "useBuiltIns": "entry",
                 */
-                "corejs": 3.23
-            }
-        ]
-    ]
+				"corejs": 3.25
+			}
+		]
+	]
 }
