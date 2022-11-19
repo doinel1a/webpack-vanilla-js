@@ -1,72 +1,223 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-        <meta
-            name="description"
-            content="DESCRIPTION"
-        />
-        <meta name="keywords" content="KEYWORDS" />
-        <meta name="author" content="Doinel Atanasiu" />
-        <meta name="copyright" content="Doinel Atanasiu" />
-        <meta name="robots" content="noindex, nofollow" />
-        <meta name="rating" content="general" />
+	<head>
+		<!-- ESSENTIAL -->
+		<meta charset="utf-8" />
+		<meta http-equiv="x-ua-compatible" content="ie=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<!-- <meta http-equiv="Content-Security-Policy" content="default-src 'self'" /> -->
 
-        <!-- Open Graph -->
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:site" content="@SITE" />
-        <meta name="twitter:creator" content="@AtanasiuDoinel" />
-        <meta name="twitter:title" content="TITLE" />
-        <meta
-            name="twitter:description"
-            content="DESCRIPTION"
-        />
-        <meta name="twitter:image" content="IMAGE URL" />
-        <meta property="og:url" content="URL" />
-        <meta property="og:title" content="TITLE" />
-        <meta
-            property="og:description"
-            content="DESCRIPTION"
-        />
-        <meta property="og:image" content="IMAGE URL" />
+		<!-- GENERAL -->
+		<!-- prettier-ignore -->
+		<title>
+			<%= htmlWebpackPlugin.options.title %>
+		</title>
+		<!-- prettier-ignore -->
+		<meta name="title" content=<%=htmlWebpackPlugin.options.title %>
+		/>
+		<!-- prettier-ignore -->
+		<meta name="application-name" content=<%=htmlWebpackPlugin.options.title %>
+		/>
+		<!-- prettier-ignore -->
+		<meta name="description" content=<%=htmlWebpackPlugin.options.description %>
+		/>
+		<!-- prettier-ignore -->
+		<meta name="keywords" content=<%=htmlWebpackPlugin.options.keywords %>
+		/>
+		<!-- prettier-ignore -->
+		<meta name="copyright" content=<%=htmlWebpackPlugin.options.authorName %>
+		/>
+		<!-- prettier-ignore -->
+		<link rel="author" href=<%=htmlWebpackPlugin.options.authorUrl %>
+		/>
+		<!-- prettier-ignore -->
+		<link rel="me" href=<%=htmlWebpackPlugin.options.authorEmail %>
+		/>
+		<!-- prettier-ignore -->
+		<link rel="me" href=<%=htmlWebpackPlugin.options.authorUrl %>
+		type="text/html">
 
-        <!-- Manifest -->
-        <link rel="manifest" href="/manifest.json"></link>
-        <meta name="mobile-web-app-capable" content="yes" />
-        <meta name="apple-mobile-web-app-capable" content="yes" />
-        <meta name="application-name" content="NAME" />
-        <meta name="apple-mobile-web-app-title" content="TITLE" />
-        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
-        <meta name="theme-color" content="#0063EB" />
-        <meta name="msapplication-navbutton-color" content="#0063EB" />
-        <meta name="msapplication-starturl" content="/" />
-        
-        <!-- Favicon - Generics -->
-        <link rel="icon" href="/favicon/favicon-32.png" sizes="32x32" />
-        <link rel="icon" href="/favicon/favicon-57.png" sizes="57x57" />
-        <link rel="icon" href="/favicon/favicon-76.png" sizes="76x76" />
-        <link rel="icon" href="/favicon/favicon-96.png" sizes="96x96" />
-        <link rel="icon" href="/favicon/favicon-128.png" sizes="128x128" />
-        <link rel="icon" href="/favicon/favicon-192.png" sizes="192x192" />
-        <link rel="icon" href="/favicon/favicon-228.png" sizes="228x228" />
+		<link rel="manifest" href="/app.webmanifest" />
+		<link rel="icon" sizes="192x192" href="/favicon/favicon-192.png" />
+		<link rel="icon" sizes="512x512" href="/favicon/favicon-512.png" />
 
-        <!-- Favicon - Android -->
-        <link rel="shortcut icon" href="/favicon/favicon-196.png" sizes="196x196" />
+		<!-- GOOGLE -->
+		<meta name="rating" content="General" />
+		<meta name="robots" content="index,follow" />
+		<!-- prettier-ignore -->
+		<meta name="google-site-verification" content=<%=htmlWebpackPlugin.options.gSV %>
+		/>
 
-        <!-- Favicon - iOS -->
-        <link rel="apple-touch-icon" href="/favicon/favicon-120.png" sizes="120x120" />
-        <link rel="apple-touch-icon" href="/favicon/favicon-152.png" sizes="152x152" />
-        <link rel="apple-touch-icon" href="/favicon/favicon-180.png" sizes="180x180" />
+		<!-- iOS -->
+		<link rel="apple-touch-icon" href="/favicon/favicon-512.png" />
+		<link rel="mask-icon" href="/favicon/favicon-512.png" color="black" />
+		<!-- prettier-ignore -->
+		<meta name="apple-mobile-web-app-title" content=<%=htmlWebpackPlugin.options.title %>
+		/>
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black" />
 
-        <title>TITLE</title>
-    </head>
+		<!-- ANDROID -->
+		<meta name="theme-color" content="#000" />
+		<meta name="mobile-web-app-capable" content="yes" />
 
-    <body class="w-screen h-screen flex justify-center items-center bg-gray-200">
-        <noscript>You need to enable JavaScript to run this app.</noscript>
-        <h1 class="text-5xl font-bold underline">
-            Hello world!
-        </h1>
-    </body>
+		<!-- SCHEMA -->
+		<!-- prettier-ignore -->
+		<link rel="author" href=<%=htmlWebpackPlugin.options.authorUrl %>
+		/>
+		<!-- prettier-ignore -->
+		<link rel="publisher" href=<%=htmlWebpackPlugin.options.authorUrl %>
+		/>
+		<!-- prettier-ignore -->
+		<meta itemprop="name" content=<%=htmlWebpackPlugin.options.title %>
+		/>
+		<!-- prettier-ignore -->
+		<meta itemprop="description" content=<%=htmlWebpackPlugin.options.description %>
+		/>
+		<!-- prettier-ignore -->
+		<meta itemprop="image" content=<%=htmlWebpackPlugin.options.ogImageUrl %>
+		/>
+
+		<!-- FACEBOOK OG -->
+		<!-- prettier-ignore -->
+		<meta property="og:url" content=<%=htmlWebpackPlugin.options.appUrl %>
+		/>
+		<meta property="og:type" content="website" />
+		<!-- prettier-ignore -->
+		<meta property="og:title" content=<%=htmlWebpackPlugin.options.title %>
+		/>
+		<!-- prettier-ignore -->
+		<meta property="og:image" content=<%=htmlWebpackPlugin.options.ogImageUrl %>
+		/>
+		<!-- prettier-ignore -->
+		<meta property="og:image:alt" content=<%=htmlWebpackPlugin.options.ogImageAlt %>
+		/>
+		<!-- prettier-ignore -->
+		<meta property="og:description" content=<%=htmlWebpackPlugin.options.description %>
+		/>
+		<!-- prettier-ignore -->
+		<meta property="og:site_name" content=<%=htmlWebpackPlugin.options.title %>
+		/>
+		<meta property="og:locale" content="en" />
+		<!-- prettier-ignore -->
+		<meta property="article:author" content=<%=htmlWebpackPlugin.options.authorName %>
+		/>
+
+		<!-- TWITTER CARD -->
+		<meta name="twitter:card" content="summary" />
+		<meta name="twitter:site" content="@site_account" />
+		<meta name="twitter:creator" content="@individual_account" />
+		<!-- prettier-ignore -->
+		<meta name="twitter:url" content=<%=htmlWebpackPlugin.options.appUrl %>
+		/>
+		<!-- prettier-ignore -->
+		<meta name="twitter:title" content=<%=htmlWebpackPlugin.options.title %>
+		/>
+		<!-- prettier-ignore -->
+		<meta name="twitter:description" content=<%=htmlWebpackPlugin.options.description %>
+		/>
+		<!-- prettier-ignore -->
+		<meta name="twitter:image" content=<%=htmlWebpackPlugin.options.ogImageUrl %>
+		/>
+		<!-- prettier-ignore -->
+		<meta name="twitter:image:alt" content=<%=htmlWebpackPlugin.options.ogImageAlt %>
+		/>
+		<meta name="twitter:dnt" content="on" />
+
+		<!-- QQ - WECHAT -->
+		<!-- prettier-ignore -->
+		<meta itemprop="name" content=<%=htmlWebpackPlugin.options.title %>
+		/>
+		<!-- prettier-ignore -->
+		<meta itemprop="image" content=<%=htmlWebpackPlugin.options.ogImageUrl %>
+		/>
+		<!-- prettier-ignore -->
+		<meta name="description" itemprop="description" content=<%=htmlWebpackPlugin.options.description %>
+		/>
+		<!-- prettier-ignore -->
+		<script defer src=<%=htmlWebpackPlugin.options.partytownSrc %> ></script>
+		<script type="text/partytown">
+			(function (window, document, dataLayerName, id) {
+				(window[dataLayerName] = window[dataLayerName] || []),
+					window[dataLayerName].push({
+						start: new Date().getTime(),
+						event: 'stg.start',
+					});
+				var scripts = document.getElementsByTagName('script')[0],
+					tags = document.createElement('script');
+				function stgCreateCookie(a, b, c) {
+					var d = '';
+					if (c) {
+						var e = new Date();
+						e.setTime(e.getTime() + 24 * c * 60 * 60 * 1e3),
+							(d = '; expires=' + e.toUTCString());
+					}
+					document.cookie = a + '=' + b + d + '; path=/';
+				}
+				var isStgDebug =
+					(window.location.href.match('stg_debug') ||
+						document.cookie.match('stg_debug')) &&
+					!window.location.href.match('stg_disable_debug');
+				stgCreateCookie('stg_debug', isStgDebug ? 1 : '', isStgDebug ? 14 : -1);
+				var qP = [];
+				dataLayerName !== 'dataLayer' &&
+					qP.push('data_layer_name=' + dataLayerName),
+					isStgDebug && qP.push('stg_debug');
+				var qPString = qP.length > 0 ? '?' + qP.join('&') : '';
+				(tags.async = !0),
+					(tags.src =
+						'https://d1a.containers.piwik.pro/' + id + '.js' + qPString),
+					scripts.parentNode.insertBefore(tags, scripts);
+				!(function (a, n, i) {
+					a[n] = a[n] || {};
+					for (var c = 0; c < i.length; c++)
+						!(function (i) {
+							(a[n][i] = a[n][i] || {}),
+								(a[n][i].api =
+									a[n][i].api ||
+									function () {
+										var a = [].slice.call(arguments, 0);
+										'string' == typeof a[0] &&
+											window[dataLayerName].push({
+												event: n + '.' + i + ':' + a[0],
+												parameters: [].slice.call(arguments, 1),
+											});
+									});
+						})(i[c]);
+				})(window, 'ppms', ['tm', 'cm']);
+			})(window, document, 'dataLayer', 'd46c9bb5-3508-4c3e-891a-57d5b67eb816');
+		</script>
+	</head>
+
+	<body class="h-screen flex flex-col justify-center items-center bg-primary">
+		<!-- prettier-ignore -->
+		<h1 class="mb-4 text-4xl text-color">
+			<%= htmlWebpackPlugin.options.title %>
+		</h1>
+		<noscript class="text-lg text-center text-red-500">
+			Enable JavaScript to enjoy all the features of this app.
+		</noscript>
+		<main
+			id="main"
+			class="w-96 h-72 container flex flex-col justify-between items-center py-10 rounded-xl border border-tertiary bg-secondary"
+		>
+			<p id="counter" class="text-6xl text-color">0</p>
+			<div class="flex gap-x-5">
+				<button
+					id="increment"
+					type="button"
+					class="w-16 px-4 py-2 text-xl text-color rounded-xl bg-accent-primary hover:bg-accent-primary-state focus:bg-accent-primary-state transition-colors"
+				>
+					+ 1
+				</button>
+				<button
+					id="decrement"
+					type="button"
+					class="w-16 px-4 py-2 text-xl text-color rounded-xl bg-accent-primary hover:bg-accent-primary-state focus:bg-accent-primary-state transition-colors"
+				>
+					- 1
+				</button>
+			</div>
+		</main>
+	</body>
 </html>

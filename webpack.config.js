@@ -1,90 +1,135 @@
-const path = require('path');
-const htmlPlugin = require('html-webpack-plugin');
-const minicssExtractPlugin = require('mini-css-extract-plugin');
-const TerserPlugin = require('terser-webpack-plugin');
+/* eslint-disable unicorn/prefer-module */
+const path = require('node:path');
 
-const mode = process.env.NODE_ENV || 'development';
+const html = require('html-webpack-plugin');
+const css = require('mini-css-extract-plugin');
+const fileManager = require('filemanager-webpack-plugin');
 
-module.exports = {
-    mode: mode,
-    target: 'browserslist',
-    entry: {
-        index: './src/js/index.js',
-    },
-    output: {
-        path: path.resolve(__dirname, './public/'),
-        filename:
-            mode === 'development' ? 'js/[name].js' : 'js/[name].[fullhash].js',
-        assetModuleFilename: 'images/[hash][ext][query]',
-        clean: {
-            keep(asset) {
-                if (asset.includes('favicon')) return true;
-                else if (asset.includes('manifest')) return true;
-            },
-        },
-    },
-    module: {
-        rules: [
-            {
-                test: /\.(s[ac]|c)ss$/i,
-                use: [
-                    {
-                        loader: minicssExtractPlugin.loader,
-                        // REQUIRED IF WANT TO IMPORT ASSETS AS URL
-                        // options: { publicPath: '' },
-                    },
-                    'css-loader',
-                    'postcss-loader',
-                    'sass-loader',
-                ],
-            },
-            {
-                test: /\.js$/,
-                exclude: '/node_modules/',
-                use: {
-                    loader: 'babel-loader',
-                    options: {
-                        cacheDirectory: true,
-                    },
-                },
-            },
-            {
-                test: /\.json$/i,
-            },
-            {
-                test: /\.(png|jpe?g|gif|svg)$/i,
-                type: 'asset',
+const meta = require('./_config');
 
-                // TO INLINE LARGER IMAGES
-                // parser: {
-                //   dataUrlCondition: {
-                //     maxSize: 30 * 1024,
-                //   },
-                // },
-            },
-        ],
-    },
-    devServer: {
-        static: {
-            directory: path.resolve(__dirname, './public'),
-        },
-        hot: true,
-    },
-    plugins: [
-        new htmlPlugin({
-            template: './src/index.html',
-            publicPath: '/',
-        }),
-        new minicssExtractPlugin({
-            filename:
-                mode === 'development'
-                    ? 'css/style.css'
-                    : 'css/style.[contenthash].css',
-        }),
-    ],
-    optimization: {
-        minimize: mode === 'development' ? false : true,
-        minimizer: [new TerserPlugin()],
-    },
-    devtool: mode === 'development' ? 'source-map' : false,
+module.exports = (environment, argv) => {
+	const isProduction = argv.mode === 'production';
+
+	return {
+		target: 'browserslist',
+		entry: {
+			index: getDirectory('src/js/index.js')
+		},
+		output: {
+			path: getDirectory('dist'),
+			filename: isProduction ? '[name].[fullhash].js' : '[name].js',
+			clean: true
+		},
+		module: {
+			rules: [
+				{
+					test: /\.js$/,
+					exclude: '/node_modules/',
+					use: {
+						loader: 'babel-loader',
+						options: {
+							cacheDirectory: true
+						}
+					}
+				},
+				{
+					test: /\.(sass|scss|css)$/i,
+					use: [
+						{
+							loader: css.loader
+						},
+						'css-loader',
+						'sass-loader',
+						'postcss-loader'
+					]
+				},
+				{
+					test: /\.(png|jpg|jpeg|gif|svg)$/i,
+					loader: 'file-loader',
+					options: {
+						outputPath: 'assets'
+					}
+				},
+				{
+					test: /\.(woff|woff2|eot|ttf|otf)$/i,
+					type: 'asset/resource',
+					generator: {
+						filename: 'fonts/[name][ext][query]'
+					}
+				}
+			]
+		},
+		plugins: [
+			new html({
+				title: meta.title,
+				description: meta.description,
+				keywords: meta.keywords,
+				authorName: meta.author.name,
+				authorEmail: meta.author.email,
+				authorUrl: meta.author.url,
+				gSV: meta.gSV,
+				appUrl: meta.appUrl,
+				ogImageUrl: meta.ogImageUrl,
+				ogImageAlt: meta.ogImageAlt,
+				template: getDirectory('src/index.html'),
+				partytownSrc: isProduction
+					? 'partytown/partytown.js'
+					: 'vendor/~partytown/partytown.js',
+				minify: {
+					collapseWhitespace: true,
+					keepClosingSlash: false,
+					removeComments: true,
+					removeRedundantAttributes: true,
+					removeScriptTypeAttributes: true,
+					removeStyleLinkTypeAttributes: true,
+					useShortDoctype: true
+				}
+			}),
+			new css({
+				filename: isProduction ? '[name].[fullhash].css' : '[name].css'
+			}),
+			new fileManager({
+				events: {
+					onEnd: [
+						{
+							copy: [
+								{
+									source: getDirectory('public/**/**'),
+									destination: 'dist'
+								}
+							]
+						},
+						{
+							copy: [
+								{
+									source: getDirectory(
+										'src/vendor/~partytown/*'
+									),
+									destination: 'dist/partytown'
+								}
+							]
+						}
+					]
+				}
+			})
+		],
+		optimization: {
+			minimize: isProduction
+		},
+		devServer: {
+			static: {
+				directory: isProduction
+					? getDirectory('dist')
+					: getDirectory('src')
+			},
+			hot: true,
+			server: 'https',
+			historyApiFallback: true
+		},
+		devtool: isProduction ? false : 'source-map'
+	};
 };
+
+function getDirectory(directory) {
+	return path.resolve(__dirname, directory);
+}

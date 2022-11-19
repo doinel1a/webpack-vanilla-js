@@ -1,16 +1,17 @@
+/* eslint-disable unicorn/prefer-module */
 const express = require('express');
-const path = require('path');
+const path = require('node:path');
 
-const PORT = process.env.PORT || 5000;
+const PORT = process.env.PORT || 8080;
 
-const server = express();
+const app = express();
 
-server.use(express.static('public'));
+app.use(express.static('dist'));
 
-server.get('/*', (request, response) => {
-    response.sendFile(path.resolve(__dirname, './public', 'index.html'));
+app.get('/*', (request, response) => {
+	response.sendFile(path.resolve(__dirname, './dist', 'index.html'));
 });
 
-server.listen(PORT, () => {
-    console.log(`SERVER RUNNING ON PORT ${PORT}`);
+app.listen(PORT, () => {
+	console.log(`Server is running at: http://127.0.0.1:${PORT}`);
 });
