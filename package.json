@@ -49,6 +49,7 @@
     "eslint-plugin-sonarjs": "^0.18.0",
     "eslint-plugin-unicorn": "^45.0.2",
     "express": "^4.18.2",
+    "file-loader": "^6.2.0",
     "filemanager-webpack-plugin": "^8.0.0",
     "html-webpack-plugin": "^5.5.0",
     "husky": "^8.0.3",
