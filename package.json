@@ -11,7 +11,7 @@
   },
   "license": "MIT",
   "scripts": {
-    "postinstall": "yarn husky install",
+    "postinstall": "npx husky install && npx playwright install",
     "clean:dist": "npx rimraf dist",
     "clean:report": "npx rimraf playwright-report",
     "clean:deps": "npx rimraf high-level-dependencies.html",
