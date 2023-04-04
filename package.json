@@ -26,21 +26,21 @@
     "preview": "nodemon server.js"
   },
   "dependencies": {
-    "core-js": "^3.29.1"
+    "core-js": "^3.30.0"
   },
   "devDependencies": {
-    "@babel/core": "^7.21.3",
-    "@babel/preset-env": "^7.20.2",
+    "@babel/core": "^7.21.4",
+    "@babel/preset-env": "^7.21.4",
     "@builder.io/partytown": "^0.7.6",
-    "@commitlint/cli": "^17.4.4",
+    "@commitlint/cli": "^17.5.1",
     "@commitlint/config-conventional": "^17.4.4",
-    "@playwright/test": "^1.31.2",
+    "@playwright/test": "^1.32.2",
     "autoprefixer": "^10.4.14",
     "babel-loader": "^9.1.2",
     "css-loader": "^6.7.3",
-    "cssnano": "^5.1.15",
-    "dependency-cruiser": "^12.11.0",
-    "eslint": "^8.36.0",
+    "cssnano": "^6.0.0",
+    "dependency-cruiser": "^12.11.1",
+    "eslint": "^8.37.0",
     "eslint-config-prettier": "^8.8.0",
     "eslint-plugin-import": "^2.25.5",
     "eslint-plugin-prettier": "^4.2.1",
@@ -56,14 +56,14 @@
     "mini-css-extract-plugin": "^2.7.5",
     "nodemon": "^2.0.21",
     "postcss": "^8.4.21",
-    "postcss-loader": "^7.1.0",
+    "postcss-loader": "^7.2.3",
     "prettier": "^2.8.6",
-    "prettier-plugin-tailwindcss": "^0.2.5",
+    "prettier-plugin-tailwindcss": "^0.2.6",
     "sass": "^1.59.3",
-    "sass-loader": "^13.2.1",
-    "tailwindcss": "^3.2.7",
-    "webpack": "^5.76.2",
+    "sass-loader": "^13.2.2",
+    "tailwindcss": "^3.3.1",
+    "webpack": "^5.77.0",
     "webpack-cli": "^5.0.1",
-    "webpack-dev-server": "^4.13.1"
+    "webpack-dev-server": "^4.13.2"
   }
 }
