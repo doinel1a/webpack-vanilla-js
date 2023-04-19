@@ -7,7 +7,7 @@ module.exports = {
       {
         debug: isProduction,
         useBuiltIns: 'usage',
-        corejs: 3.29
+        corejs: 3.3
       }
     ]
   ]
