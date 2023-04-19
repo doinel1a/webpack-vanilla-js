@@ -1,10 +1,10 @@
 [node]: https://nodejs.org/en
 [yarn]: https://yarnpkg.com
-[demo]: https://vanilla-js-starter.d1a.app
-[license]: https://github.com/doinel1a/vanilla-js-starter/blob/main/LICENSE
-[code-of-conduct]: https://github.com/doinel1a/vanilla-js-starter/blob/main/CODE_OF_CONDUCT.md
-[issues]: https://github.com/doinel1a/vanilla-js-starter/issues
-[pulls]: https://github.com/doinel1a/vanilla-js-starter/pulls
+[demo]: https://webpack-vanilla-js.d1a.app
+[license]: https://github.com/doinel1a/webpack-vanilla-js/blob/main/LICENSE
+[code-of-conduct]: https://github.com/doinel1a/webpack-vanilla-js/blob/main/CODE_OF_CONDUCT.md
+[issues]: https://github.com/doinel1a/webpack-vanilla-js/issues
+[pulls]: https://github.com/doinel1a/webpack-vanilla-js/pulls
 [browserslist]: https://browsersl.ist/#q=last+3+versions%2C%3E+0.2%25%2C+not+dead
 [graphviz]: https://www.graphviz.org/download
 [commitlint]: https://github.com/conventional-changelog/commitlint/#what-is-commitlint
@@ -15,7 +15,7 @@
 [wp-react-ts-repo]: https://github.com/doinel1a/react-ts-starter
 [wp-react-js-repo]: ''
 [wp-vanilla-ts-repo]: ''
-[wp-vanilla-js-repo]: https://github.com/doinel1a/vanilla-js-starter
+[wp-vanilla-js-repo]: https://github.com/doinel1a/webpack-vanilla-js
 [react-icon]: https://skillicons.dev/icons?i=react
 [ts-icon]: https://skillicons.dev/icons?i=ts
 [js-icon]: https://skillicons.dev/icons?i=js
@@ -89,7 +89,7 @@ And with tools that enhance the development experience:
 
   - click **"Use this template"** button <br/> or
   - click the **"Fork"** button <br/> or
-  - **clone** the repository `git clone https://github.com/doinel1a/vanilla-js-starter/ YOUR-PROJECT-NAME`;
+  - **clone** the repository `git clone https://github.com/doinel1a/webpack-vanilla-js/ YOUR-PROJECT-NAME`;
 
 - Open the terminal or the code editor, to the path your project is located, and run:
 

@@ -45,7 +45,20 @@
       id="main"
       class="flex h-screen flex-col items-center justify-center bg-primary text-color"
     >
-      <h1 id="title" class="mb-4 text-4xl"></h1>
+      <header
+        class="absolute top-0 z-[1] w-full cursor-default bg-accent-primary sm:w-auto"
+      >
+        <div class="relative flex justify-center">
+          <h1
+            class="z-[1] select-none p-4 text-xl font-semibold text-color sm:text-2xl md:text-3xl"
+          >
+            Webpack Vanilla JS — Template
+          </h1>
+          <div
+            class="arrow-right top absolute -right-[43px] -top-[35px] hidden h-0 w-0 rotate-90 border-b-[60px] border-t-[70px] border-b-transparent border-l-accent-primary border-t-transparent sm:-right-[40px] sm:block sm:border-l-[70px] md:-right-[43px] md:border-l-[76px]"
+          ></div>
+        </div>
+      </header>
       <section
         class="container flex h-72 w-96 flex-col items-center justify-between rounded-xl border border-tertiary bg-secondary py-10"
       >
@@ -67,7 +80,13 @@
           </button>
         </div>
       </section>
-      <a id="github" title="" aria-label="" href="" class="github-corner">
+      <a
+        id="github"
+        title="Get started on GitHub"
+        aria-label="Get started on GitHub"
+        href="https://github.com/doinel1a/webpack-vanilla-js"
+        class="github-corner"
+      >
         <svg
           width="80"
           height="80"
