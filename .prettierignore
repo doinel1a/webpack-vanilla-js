@@ -12,9 +12,6 @@
 # production
 /dist
 
-# various
-high-level-dependencies.html
-
 # misc
 .DS_Store
 *.pem

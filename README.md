@@ -65,7 +65,6 @@ This development starter template comes fully equipped with all the necessary to
 
 And with tools that enhance the development experience:
 
-- **Dependency cruiser**: A tool for visualizing and analyzing the dependencies between modules in a project, helping to identify potential issues and improve code maintainability;
 - **ESLint**: A tool for enforcing coding standards and identifying potential errors in the code;
 - **Prettier**: A code formatter that automatically formats code to conform to a consistent style, making it easier to read and maintain;
 - **Husky**: A Git hook manager that allows easy set up and configuration of Git hooks, which are scripts that run at certain points in the Git workflow;
@@ -105,7 +104,6 @@ And with tools that enhance the development experience:
     - To **preview** your **production optimized app**: `yarn preview`;
 
 - **Keep in mind**:
-  - The `dependency-cruiser` package needs the GraphViz `dot` command in order to work. On most linux and comparable operating systems it will be awailable by default, if it's not the case check [GraphViz][graphviz] page for instructions, especially Windows users;
   - The `playwright` package needs specific versions of browser binaries to operate, you can install them by running:
     - With **NPM** :
       `npx playwright install`;
