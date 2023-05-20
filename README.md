@@ -1,5 +1,6 @@
 [node]: https://nodejs.org/en
 [yarn]: https://yarnpkg.com
+[pnpm]: https://pnpm.io
 [demo]: https://webpack-vanilla-js.d1a.app
 [license]: https://github.com/doinel1a/webpack-vanilla-js/blob/main/LICENSE
 [code-of-conduct]: https://github.com/doinel1a/webpack-vanilla-js/blob/main/CODE_OF_CONDUCT.md
@@ -26,18 +27,18 @@
 [opera-icon]: https://github.com/alrra/browser-logos/blob/main/src/opera/opera_64x64.png
 [safari-icon]: https://github.com/alrra/browser-logos/blob/main/src/safari/safari_64x64.png
 
-# Webpack Vanilla JavaScript — Starter template
+# Webpack Vanilla JavaScript — Template
 
 Are you looking for a way to supercharge your development experience and build stunning web applications with ease? You are in the right place!
 This development starter template is the ultimate solution to help you getting started on your project in no time, without the hassle of setting up and configuring your development environment from scratch each time you start working.
-This template is ideal for front-end developers who want to build modern, fast and reliable web applications with the latest cutting edge technologies such as **JavaScript**, **Tailwind CSS**, **ESLint**, **Prettier**, **Husky**, **Webpack**, **Babel**, **Core-JS** and much more!
+This template is ideal for front-end developers who want to build modern, fast and reliable web applications with the latest cutting edge technologies such as **JavaScript**, **TailwindCSS**, **ESLint**, **Prettier**, **Husky**, **Webpack**, **Babel**, **Core-JS** and much more!
 
-[Demo][demo] — [Bug(label: bug)][issues] — [Feature(label: enhancement)][issues]
+**[Demo][demo]** | **[Bug(label: bug)][issues]** | **[Feature(label: enhancement)][issues]**
 
 ## :bookmark: Table of contents
 
-- :package: [Features](#package-features "Go to 'Features' section")
 - :computer: [Getting started](#computer-getting-started "Go to 'Getting started' section")
+- :battery: [Features](#battery-features "Go to 'Features' section")
 - :arrows_clockwise: [Versions](#arrows_clockwise-versions "Go to 'Versions' section")
 - :globe_with_meridians: [Browsers support](#globe_with_meridians-browsers-support "Go to 'Browsers support' section")
 - :busts_in_silhouette: [Contribute](#busts_in_silhouette-contribute "Go to 'Contribute' section")
@@ -46,22 +47,44 @@ This template is ideal for front-end developers who want to build modern, fast a
 
 ---
 
-## :package: Features
+## :computer: Getting started
 
-This development starter template comes fully equipped with all the necessary tools to create modern, responsive and fast web applications, including:
+### Prerequisites:
+
+- JavaScript runtime **[node.js][node]**;
+- **(OPTIONAL)** Alternative package manager:
+  - **[PNPM][pnpm]** `npm install --global pnpm` <br /> or
+  - **[Yarn][yarn]** `npm install --global yarn`
+
+### Start developing:
+
+- Get the repository:
+  - click **"Use this template"** &nbsp; or &nbsp; **"Fork"** button <br /> alternately
+  - **clone** the repository through your terminal: <br />
+    `git clone https://github.com/doinel1a/webpack-vanilla-js YOUR-PROJECT-NAME`;
+- Open your terminal or code editor to the path your project is located, and run:
+  | | **NPM** | **PNPM** | **Yarn** |
+  | ------------------------------------------------ | ----------------- | -------------- | -------------- |
+  | To **install** the dependencies | `npm install` | `pnpm install` | `yarn install` |
+  | To **run** the **development server** | `npm run dev` | `pnpm dev` | `yarn dev` |
+  | To **build** your app **for production** | `npm run build` | `pnpm build` | `yarn build` |
+  | To **preview** your **production optimized app** | `npm run preview` | `pnpm preview` | `yarn preview` |
+
+[Back to :arrow_up:](#webpack-vanilla-javascript--template "Back to 'Table of contents' section")
+
+---
+
+## :battery: Features
+
+This repository comes 🔋 packed with:
 
 - **JavaScript**: A programming language used primarily for creating dynamic web content and interactive user interfaces;
-- **Tailwind CSS**: A utility-first CSS framework that provides predefined classes for common styles and layout patterns, allowing quick styling without writing custom CSS;
+- **TailwindCSS**: A utility-first CSS framework that provides predefined classes for common styles and layout patterns, allowing quick styling without writing custom CSS;
 - **SASS**: A CSS preprocessor that adds features such as variables, nesting, and mixins to CSS, making it easier to write and maintain large CSS codebases;
-- **PostCSS**: A tool for transforming CSS with JavaScript plugins, allowing to add new features to CSS and improve the development process:
-  - **Autoprefixer**: A PostCSS plugin that adds vendor prefixes to CSS properties, ensuring cross-browser compatibility;
-  - **CSSnano**: A PostCSS plugin that minifies CSS code, reducing file size and improving page load times;
+- **PostCSS**: A tool for transforming CSS with JavaScript plugins, allowing to add new features to CSS and improve the development process;
 - **Fontawesome**: A library with over 5000 free icons that can be easily customized and used in web applications;
 - **Playwright**: A library for automating web browser interactions, allowing the writing of end-to-end tests and perform browser automation tasks;
-- **Webpack**: A build tool and development server that provides fast and efficient development and production builds for modern web applications:
-  - **Babel**: A compiler used for both compilation and bundling both JavaScript and TypeScript into cross-browser compatible supported code;
-  - **Core-JS**: A modular standard library that provides polyfills for new features introduced in the latest ECMAScript specifications and helps ensure cross-browser compatibility;
-  - **Partytown**: A lazy-loaded library to help relocate resource intensive scripts into a web worker, and off of the main thread. Its goal is to help speed up sites by dedicating the main thread to your code, and offloading third-party scripts to a web worker;
+- **Webpack**: A build tool and development server that provides fast and efficient development and production builds for modern web applications;
 
 And with tools that enhance the development experience:
 
@@ -70,89 +93,50 @@ And with tools that enhance the development experience:
 - **Husky**: A Git hook manager that allows easy set up and configuration of Git hooks, which are scripts that run at certain points in the Git workflow;
 - **Commitlint**: A tool for enforcing commit message conventions in Git repositories, helping to ensure consistent and informative commit messages;
 
-[Back to:arrow_up:](#webpack-vanilla-javascript--starter-template "Back to 'Table of contents' section")
-
----
-
-## :computer: Getting started
-
-### Prerequisites:
-
-- JavaScript runtime [Node][node];
-- **(OPTIONAL)** <br />
-  [Yarn][yarn] package manager: `npm install --global yarn`;
-
-### To get started with this template:
-
-- Get the repository:
-
-  - click **"Use this template"** button <br/> or
-  - click the **"Fork"** button <br/> or
-  - **clone** the repository `git clone https://github.com/doinel1a/webpack-vanilla-js/ YOUR-PROJECT-NAME`;
-
-- Open the terminal or the code editor, to the path your project is located, and run:
-
-  - With **NPM** :
-    - To **install** the dependencies: `npm install`;
-    - To **run** the **development server**: `npm run dev`;
-    - To **build** your app **for production**: `npm run build`;
-    - To **preview** your **production optimized app**: `npm run preview`;
-  - With **Yarn** :
-    - To **install** the dependencies: `yarn install`;
-    - To **run** the **development server**: `yarn dev`;
-    - To **build** your app **for production**: `yarn build`;
-    - To **preview** your **production optimized app**: `yarn preview`;
-
-- **Keep in mind**:
-  - The `playwright` package needs specific versions of browser binaries to operate, you can install them by running:
-    - With **NPM** :
-      `npx playwright install`;
-    - With **Yarn** :
-      `yarn playwright install`;
-
-[Back to:arrow_up:](#webpack-vanilla-javascript--starter-template "Back to 'Table of contents' section")
+[Back to:arrow_up:](#webpack-vanilla-javascript--template "Back to 'Table of contents' section")
 
 ---
 
 ## :arrows_clockwise: Versions
 
-**Webpack** and **Vite** are popular build tools for web applications, but they differ in terms of build speed and configuration. Vite is faster than Webpack, especially for large projects, and has a more "zero-config" approach. Both tools support **SWC** as a compiler, but Vite is optimized for it out of the box, making it even faster. If you prioritize speed and ease of use, go with the Vite versions. If you need more control over your build process, choose the Webpack version.
+This repository comes configured with 2 of the industry standards for development tools: **Webpack** and **Vite**. <br />
+Both tools support **SWC (Speedy Web Compiler)**, a **Rust-based compiler**; Vite is optimized for it out of the box.
 
-### Vite:
+### Vite (SWC compiler)
 
-|                           React - TypeScript                            |                           React - JavaScript                            |     Vanilla TypeScript      |     Vanilla JavaScript      |
-| :---------------------------------------------------------------------: | :---------------------------------------------------------------------: | :-------------------------: | :-------------------------: |
-| ![React][react-icon] & ![TS][ts-icon] <br /> [Repo][vite-react-ts-repo] | ![React][react-icon] & ![JS][js-icon] <br /> [Repo][vite-react-js-repo] | ![TS][ts-icon] <br /> Soon! | ![JS][js-icon] <br /> Soon! |
+|                           React - TypeScript                            |                           React - JavaScript                            |       Vanilla TypeScript        |       Vanilla JavaScript        |
+| :---------------------------------------------------------------------: | :---------------------------------------------------------------------: | :-----------------------------: | :-----------------------------: |
+| ![React][react-icon] & ![TS][ts-icon] <br /> [Repo][vite-react-ts-repo] | ![React][react-icon] & ![JS][js-icon] <br /> [Repo][vite-react-js-repo] | ![TS][ts-icon] <br /> **Soon!** | ![JS][js-icon] <br /> **Soon!** |
 
-### Webpack:
+### Webpack (Babel compiler)
 
-|                          React - TypeScript                           |                 React - JavaScript                 |     Vanilla TypeScript      |       Vanilla JavaScript        |
-| :-------------------------------------------------------------------: | :------------------------------------------------: | :-------------------------: | :-----------------------------: |
-| ![React][react-icon] & ![TS][ts-icon] <br /> [Repo][wp-react-ts-repo] | ![React][react-icon] & ![JS][js-icon] <br /> Soon! | ![TS][ts-icon] <br /> Soon! | ![JS][js-icon] <br /> This repo |
+|                          React - TypeScript                           |                   React - JavaScript                   |       Vanilla TypeScript        |     Vanilla JavaScript      |
+| :-------------------------------------------------------------------: | :----------------------------------------------------: | :-----------------------------: | :-------------------------: |
+| ![React][react-icon] & ![TS][ts-icon] <br /> [Repo][wp-react-ts-repo] | ![React][react-icon] & ![JS][js-icon] <br /> **Soon!** | ![TS][ts-icon] <br /> **Soon!** | ![JS][js-icon] <br /> **/** |
 
-[Back to:arrow_up:](#webpack-vanilla-javascript--starter-template "Back to 'Table of contents' section")
+[Back to:arrow_up:](#webpack-vanilla-javascript--template "Back to 'Table of contents' section")
 
 ---
 
 ## :globe_with_meridians: Browsers support
 
-The provided configuration ensures **92.3 %** of **global browsers** , especially it supports the last three versions of the following browsers:
+The provided configuration ensures **92.3%** coverage for all browsers, in particular of the following:
 
 |            Chrome             |             Firefox              |             Edge             |        Opera         | Safari                       |
 | :---------------------------: | :------------------------------: | :--------------------------: | :------------------: | ---------------------------- |
 | ![Google Chrome][chrome-icon] | ![Mozilla Firefox][firefox-icon] | ![Microsoft Edge][edge-icon] | ![Opera][opera-icon] | ![Apple Safari][safari-icon] |
 
-In order to support a wider percentage of browsers and meet your project requirements, update the `./.browserslistrc` configuration file:
+**\*** In order to support a wider percentage of browsers, update the `./.browserslistrc` configuration file:
 
-1. `last 3 versions`: the versions of each browser;
-2. `> 0.2%`: the browsers usage statistics;
-3. `not dead`: the browsers official support or updates;
+1. `last 3 versions`: browser version;
+2. `> 0.2%`: browser usage statistics;
+3. `not dead`: whether the browser is officially supported;
 
-You can play with the configurations [here][browserslist] and check in real-time the **global browsers support** .
+Update the configuration [here][browserslist] and check in real-time the **global browsers support**.
 
-_The more versions to support, larger JS and CSS bundles size will be._
+**\* The more versions to support, larger JS and CSS bundles size will be.**
 
-[Back to:arrow_up:](#webpack-vanilla-javascript--starter-template "Back to 'Table of contents' section")
+[Back to:arrow_up:](#webpack-vanilla-javascript--template "Back to 'Table of contents' section")
 
 ---
 
@@ -164,21 +148,20 @@ Please check the [**contributing guide**][code-of-conduct] for details on how to
 
 ### How to contribute:
 
-1.  [Get started](#computer-getting-started "Go to 'Getting started' section");
-2.  For a new feature:
+1.  **[Get started](#computer-getting-started "Go to 'Getting started' section");**
+2.  **For a new feature:**
     1.  Create a new branch: `git checkout -b feat/NEW-FEATURE`;
     2.  Add your changes to the staging area: `git add PATH/TO/FILENAME.EXTENSION`;
     3.  Commit your changes: `git commit -m "feat: NEW FEATURE"`;
     4.  Push your new branch: `git push origin feat/NEW-FEATURE`;
-3.  For a bug fix:
+3.  **For a bug fix:**
     1.  Create a new branch: `git checkout -b fix/BUG-FIX`;
     2.  Add your changes to the staging area: `git add PATH/TO/FILENAME.EXTENSION`;
     3.  Commit your changes: `git commit -m "fix: BUG FIX"`;
     4.  Push your new branch: `git push origin fix/BUG-FIX`;
-4.  Open a new [pull request][pulls];
-5.  Once your pull request has been merged, you can delete the branch;
+4.  **Open a new [pull request][pulls];**
 
-[Back to:arrow_up:](#webpack-vanilla-javascript--starter-template "Back to 'Table of contents' section")
+[Back to:arrow_up:](#webpack-vanilla-javascript--template "Back to 'Table of contents' section")
 
 ---
 
@@ -188,7 +171,7 @@ All logos and trademarks are the property of their respective owners.
 Everything else is distributed under the **MIT License** .  
 See the [LICENSE][license] file for more informations.
 
-[Back to:arrow_up:](#webpack-vanilla-javascript--starter-template "Back to 'Table of contents' section")
+[Back to:arrow_up:](#webpack-vanilla-javascript--template "Back to 'Table of contents' section")
 
 ---
 
@@ -199,4 +182,4 @@ Special thanks to:
 - [alrra](https://github.com/alrra) for [browser-logos](https://github.com/alrra/browser-logos);
 - [tandpfun](https://github.com/tandpfun) for [skill-icons](https://github.com/tandpfun/skill-icons);
 
-[Back to:arrow_up:](#webpack-vanilla-javascript--starter-template "Back to 'Table of contents' section")
+[Back to:arrow_up:](#webpack-vanilla-javascript--template "Back to 'Table of contents' section")
