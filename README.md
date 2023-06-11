@@ -12,7 +12,7 @@
 [vite-react-ts-repo]: https://github.com/doinel1a/vite-react-ts-starter
 [vite-react-js-repo]: https://github.com/doinel1a/vite-react-js-starter
 [vite-vanilla-ts-repo]: ''
-[vite-vanilla-js-repo]: ''
+[vite-vanilla-js-repo]: https://github.com/doinel1a/vite-vanilla-js
 [wp-react-ts-repo]: https://github.com/doinel1a/react-ts-starter
 [wp-react-js-repo]: ''
 [wp-vanilla-ts-repo]: ''
@@ -106,17 +106,17 @@ Both tools support **SWC (Speedy Web Compiler)**, a **Rust-based compiler**; Vit
 
 Is a simple and fast solution thanks to it's "zero-config" approach which offers a smoother development experience.
 
-|                           React - TypeScript                            |                           React - JavaScript                            |     |       Vanilla TypeScript        |       Vanilla JavaScript        |
-| :---------------------------------------------------------------------: | :---------------------------------------------------------------------: | :-: | :-----------------------------: | :-----------------------------: |
-| ![React][react-icon] & ![TS][ts-icon] <br /> [Repo][vite-react-ts-repo] | ![React][react-icon] & ![JS][js-icon] <br /> [Repo][vite-react-js-repo] |     | ![TS][ts-icon] <br /> **Soon!** | ![JS][js-icon] <br /> **Soon!** |
+|                             React - TypeScript                              |                             React - JavaScript                              |     |       Vanilla TypeScript        |                   Vanilla JavaScript                   |
+| :-------------------------------------------------------------------------: | :-------------------------------------------------------------------------: | :-: | :-----------------------------: | :----------------------------------------------------: |
+| ![React][react-icon] & ![TS][ts-icon] <br /> **[Repo][vite-react-ts-repo]** | ![React][react-icon] & ![JS][js-icon] <br /> **[Repo][vite-react-js-repo]** |     | ![TS][ts-icon] <br /> **Soon!** | ![JS][js-icon] <br /> **[Repo][vite-vanilla-js-repo]** |
 
 ### Webpack (Babel compiler)
 
 Is more a flexible solution, capable of handling complex configurations.
 
-|                          React - TypeScript                           |                   React - JavaScript                   |     |       Vanilla TypeScript        |     Vanilla JavaScript      |
-| :-------------------------------------------------------------------: | :----------------------------------------------------: | :-: | :-----------------------------: | :-------------------------: |
-| ![React][react-icon] & ![TS][ts-icon] <br /> [Repo][wp-react-ts-repo] | ![React][react-icon] & ![JS][js-icon] <br /> **Soon!** |     | ![TS][ts-icon] <br /> **Soon!** | ![JS][js-icon] <br /> **/** |
+|                            React - TypeScript                             |                   React - JavaScript                   |     |       Vanilla TypeScript        |     Vanilla JavaScript      |
+| :-----------------------------------------------------------------------: | :----------------------------------------------------: | :-: | :-----------------------------: | :-------------------------: |
+| ![React][react-icon] & ![TS][ts-icon] <br /> **[Repo][wp-react-ts-repo]** | ![React][react-icon] & ![JS][js-icon] <br /> **Soon!** |     | ![TS][ts-icon] <br /> **Soon!** | ![JS][js-icon] <br /> **/** |
 
 [Back to:arrow_up:](#webpack-vanilla-javascript--template "Back to 'Table of contents' section")
 
