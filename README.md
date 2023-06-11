@@ -104,15 +104,19 @@ Both tools support **SWC (Speedy Web Compiler)**, a **Rust-based compiler**; Vit
 
 ### Vite (SWC compiler)
 
-|                           React - TypeScript                            |                           React - JavaScript                            |       Vanilla TypeScript        |       Vanilla JavaScript        |
-| :---------------------------------------------------------------------: | :---------------------------------------------------------------------: | :-----------------------------: | :-----------------------------: |
-| ![React][react-icon] & ![TS][ts-icon] <br /> [Repo][vite-react-ts-repo] | ![React][react-icon] & ![JS][js-icon] <br /> [Repo][vite-react-js-repo] | ![TS][ts-icon] <br /> **Soon!** | ![JS][js-icon] <br /> **Soon!** |
+Is a simple and fast solution thanks to it's "zero-config" approach which offers a smoother development experience.
+
+|                           React - TypeScript                            |                           React - JavaScript                            |     |       Vanilla TypeScript        |       Vanilla JavaScript        |
+| :---------------------------------------------------------------------: | :---------------------------------------------------------------------: | :-: | :-----------------------------: | :-----------------------------: |
+| ![React][react-icon] & ![TS][ts-icon] <br /> [Repo][vite-react-ts-repo] | ![React][react-icon] & ![JS][js-icon] <br /> [Repo][vite-react-js-repo] |     | ![TS][ts-icon] <br /> **Soon!** | ![JS][js-icon] <br /> **Soon!** |
 
 ### Webpack (Babel compiler)
 
-|                          React - TypeScript                           |                   React - JavaScript                   |       Vanilla TypeScript        |     Vanilla JavaScript      |
-| :-------------------------------------------------------------------: | :----------------------------------------------------: | :-----------------------------: | :-------------------------: |
-| ![React][react-icon] & ![TS][ts-icon] <br /> [Repo][wp-react-ts-repo] | ![React][react-icon] & ![JS][js-icon] <br /> **Soon!** | ![TS][ts-icon] <br /> **Soon!** | ![JS][js-icon] <br /> **/** |
+Is more a flexible solution, capable of handling complex configurations.
+
+|                          React - TypeScript                           |                   React - JavaScript                   |     |       Vanilla TypeScript        |     Vanilla JavaScript      |
+| :-------------------------------------------------------------------: | :----------------------------------------------------: | :-: | :-----------------------------: | :-------------------------: |
+| ![React][react-icon] & ![TS][ts-icon] <br /> [Repo][wp-react-ts-repo] | ![React][react-icon] & ![JS][js-icon] <br /> **Soon!** |     | ![TS][ts-icon] <br /> **Soon!** | ![JS][js-icon] <br /> **/** |
 
 [Back to:arrow_up:](#webpack-vanilla-javascript--template "Back to 'Table of contents' section")
 
