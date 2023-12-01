@@ -27,12 +27,12 @@
     "core-js": "^3.33.3"
   },
   "devDependencies": {
-    "@babel/core": "^7.23.3",
-    "@babel/preset-env": "^7.23.3",
+    "@babel/core": "^7.23.5",
+    "@babel/preset-env": "^7.23.5",
     "@builder.io/partytown": "^0.8.1",
-    "@commitlint/cli": "^18.4.2",
-    "@commitlint/config-conventional": "^18.4.2",
-    "@playwright/test": "^1.40.0",
+    "@commitlint/cli": "^18.4.3",
+    "@commitlint/config-conventional": "^18.4.3",
+    "@playwright/test": "^1.40.1",
     "autoprefixer": "^10.4.16",
     "babel-loader": "^9.1.3",
     "css-loader": "^6.8.1",
